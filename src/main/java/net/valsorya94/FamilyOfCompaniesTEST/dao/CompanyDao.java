@@ -7,6 +7,7 @@ import net.valsorya94.FamilyOfCompaniesTEST.model.Company;
 /**
  * Created by Valsorya94 on 03.07.2017.
  */
+
 public interface CompanyDao {
     public void addCompany(Company company);
 
