@@ -56,19 +56,17 @@
 
 </head>
 <body>
-<h1>company Details</h1>
+<h1>Company Details</h1>
 
 <table class="tg">
     <tr>
         <th width="80">ID</th>
-        <th width="120">Title</th>
-        <th width="120">Author</th>
-        <th width="120">Price</th>
+        <th width="120">Name</th>
+        <th width="120">Annual_Income</th>
     </tr>
     <tr>
         <td>${company.id}</td>
         <td>${company.companyTitle}</td>
-        <td>${company.companyBoss}</td>
         <td>${company.price/100}${company.price%100}</td>
     </tr>
 </table>

@@ -47,10 +47,6 @@
             color: #333;
             background-color: #f0f0f0;
         }
-
-        .tg .tg-4eph {
-            background-color: #f9f9f9
-        }
     </style>
 </head>
 <body>
@@ -65,8 +61,7 @@
     <table class="tg">
         <tr>
             <th width="80">ID</th>
-            <th width="120">Title</th>
-            <th width="120">Author</th>
+            <th width="120">Name</th>
             <th width="120">Price</th>
             <th width="60">Edit</th>
             <th width="60">Delete</th>
@@ -87,7 +82,7 @@
 
 <h1>Add a Company</h1>
 
-<c:url var="addAction" value="/companies/add"/>
+<c:url var="addAction" value="/companies/add.form"/>
 
 <form:form action="${addAction}" commandName="company">
     <table>
@@ -99,8 +94,8 @@
                     </form:label>
                 </td>
                 <td>
-                    <form:input path="id" readonly="true" size="8" disabled="true"/>
-                    <form:hidden path="id"/>
+                    <form:input path="idOfCompany" readonly="true" size="8" disabled="true"/>
+                        <%--<form:hidden path="idOfCompany"/>--%>
                 </td>
             </tr>
         </c:if>
@@ -111,27 +106,17 @@
                 </form:label>
             </td>
             <td>
-                <form:input path="companyTitle"/>
+                <form:input path="nameOfCompany"/>
             </td>
         </tr>
         <tr>
             <td>
-                <form:label path="companyBoss">
-                    <spring:message text="Boss"/>
-                </form:label>
-            </td>
-            <td>
-                <form:input path="companyBoss"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <form:label path="price">
+                <form:label path="">
                     <spring:message text="Price"/>
                 </form:label>
             </td>
             <td>
-                <form:input path="price"/>
+                <form:input path="annualIncome"/>
             </td>
         </tr>
         <tr>

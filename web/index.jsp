@@ -14,7 +14,7 @@
 <body>
 <h3>by Valsorya94</h3>
 <br/>
-<a href="<c:url value="/companies"/>" target="_blank">Companies list</a>
+<a href="<c:url value="/companies.form"/>" target="_blank">Companies list</a>
 <br/>
 </body>
 </html>
