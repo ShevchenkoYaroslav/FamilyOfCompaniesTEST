@@ -66,7 +66,7 @@
     </tr>
     <tr>
         <td>${company.id}</td>
-        <td>${company.companyTitle}</td>
+        <td>${company.companyName}</td>
         <td>${company.price/100}${company.price%100}</td>
     </tr>
 </table>

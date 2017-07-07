@@ -69,7 +69,7 @@
         <c:forEach items="${listCompanies}" var="company">
             <tr>
                 <td>${company.id}</td>
-                <td><a href="/companiesdata/${company.id}" target="_blank">${company.companyTitle}</a></td>
+                <td><a href="/companiesdata/${company.id}" target="_blank">${company.companyName}</a></td>
                 <td>${company.companyName}</td>
                 <td>${company.price/100}${company.price%100}</td>
                 <td><a href="<c:url value='/edit/${company.id}'/>">Edit</a></td>
@@ -86,7 +86,7 @@
 
 <form:form action="${addAction}" commandName="company">
     <table>
-        <c:if test="${!empty company.companyTitle}">
+        <c:if test="${!empty company.companyName}">
             <tr>
                 <td>
                     <form:label path="id">
@@ -101,8 +101,8 @@
         </c:if>
         <tr>
             <td>
-                <form:label path="companyTitle">
-                    <spring:message text="Title"/>
+                <form:label path="companyName">
+                    <spring:message text="Name"/>
                 </form:label>
             </td>
             <td>
@@ -121,11 +121,11 @@
         </tr>
         <tr>
             <td colspan="2">
-                <c:if test="${!empty company.companyTitle}">
+                <c:if test="${!empty company.companyName}">
                     <input type="submit"
                            value="<spring:message text="Edit Company"/>"/>
                 </c:if>
-                <c:if test="${empty company.companyTitle}">
+                <c:if test="${empty company.companyName}">
                     <input type="submit"
                            value="<spring:message text="Add company"/>"/>
                 </c:if>
