@@ -32,7 +32,7 @@ public class AppTest {
 
     @SuppressWarnings("SpringJavaAutowiringInspection")
     @Autowired
-    protected WebApplicationContext wac;
+    private WebApplicationContext wac;
 
     @Before
     public void setup() {

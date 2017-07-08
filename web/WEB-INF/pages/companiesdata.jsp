@@ -1,3 +1,4 @@
+<jsp:useBean id="company" scope="request" type="net.valsorya94.FamilyOfCompaniesTEST.model.Company"/>
 <%--
   Created by IntelliJ IDEA.
   User: Valsorya94
@@ -48,10 +49,6 @@
             color: #333;
             background-color: #f0f0f0;
         }
-
-        .tg .tg-4eph {
-            background-color: #f9f9f9
-        }
     </style>
 
 </head>
@@ -65,9 +62,9 @@
         <th width="120">Annual_Income</th>
     </tr>
     <tr>
-        <td>${company.id}</td>
-        <td>${company.companyName}</td>
-        <td>${company.price/100}${company.price%100}</td>
+        <td>${company.idOfCompany}</td>
+        <td>${company.nameOfCompany}</td>
+        <td>${company.annualIncome/100}$</td>
     </tr>
 </table>
 </body>

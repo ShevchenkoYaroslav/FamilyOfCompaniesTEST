@@ -10,8 +10,12 @@
 <html>
 <head>
     <title>FamilyOfCompaniesTEST</title>
+    <link href="bootstrap-3.3.2/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-3.3.2/css/bootstrap-theme.css" rel="stylesheet">
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="bootstrap-3.3.2/js/bootstrap.js"></script>
 <h3>by Valsorya94</h3>
 <br/>
 <a href="<c:url value="/companies.form"/>" target="_blank">Companies list</a>
