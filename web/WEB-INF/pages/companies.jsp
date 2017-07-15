@@ -102,7 +102,7 @@
         <tr>
             <td>
                 <form:label path="companyName">
-                    <spring:message text="Name"/>
+                    <spring:message text="Name of company"/>
                 </form:label>
             </td>
             <td>
