@@ -112,7 +112,7 @@
         <tr>
             <td>
                 <form:label path="">
-                    <spring:message text="Price"/>
+                    <spring:message text="Annual Income"/>
                 </form:label>
             </td>
             <td>
